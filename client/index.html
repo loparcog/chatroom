@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <title> chatSys </title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="signDiv">
+    Username: <input id="signDiv-username" type="text"></input><br>
+    Room ID: <input id="signDiv-roomID" type="text"></input><br>
+    Password: <input id="signDiv-password" type="text"> (Admin Use Only)</input><br>
+    <button id="signDiv-login">Log In</button>
+  </div>
+
+  <div id="chatDiv" style="display:none;">
+    <ul id="events">
+    </ul>
+
+      <form id='chat-form'>
+        <input id="chat">
+        <button id="say">Say</button>
+      </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/client.js"></script>
+
+</body>
+
+</html>
